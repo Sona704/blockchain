@@ -82,6 +82,27 @@
 
    
   }
+  @media only screen and (max-width: 900px) {
+    .header {
+      font-size: 25px;
+      padding-top: 10px;
+    }
+    .header:hover{
+      font-size: 30px;
+    }
+  
+    .Childheader{
+      font-size: 18px;
+       font-weight: bold;
+      
+       top: 10px;
+     
+       width: 90%;
+      
+   }
+
+   
+  }
 
  
   
