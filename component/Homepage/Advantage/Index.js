@@ -25,7 +25,7 @@ const Index = () => {
       featurepoint: [
         'We do not track non-custodial funds held in Private Key Wallets, we only keep track of funds in Accounts that are custodied by Blockchain.com',
         ' All Personally Identifiable Information is stored in Google Cloud Platform, secured by best in class digital security.',
-        'Our compliance team ensures that we follow and are compliant with AML and KYC regulations globally so that you can trust Blockchain.com and any counterparty',
+        'Our compliance team ensures that we follow and are compliant with AML and KYC regulations globally ',
       ],
       img: '../../../homepage/advantage/1_lP9wvVzSJbuTggCGTCOiuA.png',
     },
@@ -34,7 +34,7 @@ const Index = () => {
       subheading:
         'Secure software on desktop and mobile.',
       featurepoint: [
-        ' The Wallet and Exchange both support 2FA, use AES-256 encryption, and private keys for custodied funds are stored in FIPS 140-2 certified devices',
+        ' The Wallet and Exchange both support 2FA and private keys for custodied funds are stored in FIPS 140-2 certified devices',
         ' Blockchain.com enforces TLS 1.2 for Internet-facing applications and audits support cypher periodically',
         'Strong cyphers are used to enforce storage encryption across the cloud and physical facilities',
       ],
@@ -85,7 +85,7 @@ const Index = () => {
         {data.map((item, index) => {
           return (
             <div key={index} className={style.rootcontainer}>
-              <h1 className='font-32 font-bold text-white margin-buttom-20'>
+              <h1 className={style.container}>
               Get peace of mind with world-class security
               </h1>
               <Row style={{ marginTop: '6%' }}>
@@ -102,10 +102,11 @@ const Index = () => {
                     })}
                   </ul>
                 </Col>
-                <Col lg={12}>
-                  <img
-                    style={{ width: '400px', height: '300px', margin: 'auto' }}
-                    src={item.img}></img>
+                <Col lg={12} xs={24}>
+                  <div style={{textAlign: "left"}} ><img
+                    className={style.imgstyle}
+                    src={item.img}></img></div>
+                  
                 </Col>
               </Row>
             </div>

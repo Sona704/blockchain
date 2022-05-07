@@ -24,14 +24,14 @@ const BitcoinFor = ({ featuredataprop }) => {
             <Col
               style={{ display: index > 2 && explore }}
            
-              xs={12} sm={24} md={12} lg={12} xl={8}
+              xs={24} sm={24} md={12} lg={12} xl={8}
               key={index}>
               <div className={clsx(style.blockChild, 'margin-auto')}>
                 <img className={style.iconstyle} src={each.icon}></img>
                 <p className='font-20 font-bold'>{each.title}</p>
                 <p
                   className='font-18 margin-auto'
-                  style={{ width: '300px', paddingBottom: '20px' }}>
+                  style={{ width: 'auto', padding: '10px' }}>
                   {each.des}
                 </p>
               </div>

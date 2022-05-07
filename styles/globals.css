@@ -45,7 +45,7 @@ a {
   margin-bottom: 20px;
 }
 .ant-carousel .homepage {
-  width: 80%;
+  width: 90%;
   margin: auto !important;
   height: auto;
   
@@ -61,4 +61,7 @@ a {
 }
 .margin-10{
   margin-top: 10px;
+}
+.center{
+  text-align: center;
 }

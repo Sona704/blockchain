@@ -1,52 +1,64 @@
-import React,{useEffect,useState} from 'react';
+/** @format */
+
+import React, { useEffect, useState } from 'react';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
-import { Pie } from 'react-chartjs-2';
+import Footer from "../../component/Footer/Index";
+import { Bar } from 'react-chartjs-2';
 import axios from 'axios';
+import Header from '../../component/Header/Index';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-export const data = {
-  labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-  datasets: [
-    {
-      label: '# of Votes',
-      data: [12, 19, 3, 5, 2, 3],
-      backgroundColor: [
-        'rgba(255, 99, 132, 0.2)',
-        'rgba(54, 162, 235, 0.2)',
-        'rgba(255, 206, 86, 0.2)',
-        'rgba(75, 192, 192, 0.2)',
-        'rgba(153, 102, 255, 0.2)',
-        'rgba(255, 159, 64, 0.2)',
-      ],
-      borderColor: [
-        'rgba(255, 99, 132, 1)',
-        'rgba(54, 162, 235, 1)',
-        'rgba(255, 206, 86, 1)',
-        'rgba(75, 192, 192, 1)',
-        'rgba(153, 102, 255, 1)',
-        'rgba(255, 159, 64, 1)',
-      ],
-      borderWidth: 1,
-    },
-  ],
-};
+function Chartcontainer() {
+  const [apiresponse, setapiresponse] = useState('');
+  const [chartvalue, setchartvalue] = useState({ label: '', value: '' });
+  useEffect(() => {
+    async function getchartdatafn() {
+      let response = await axios.get(
+        `https://api.blockchain.info/charts/transactions-per-second?timespan=1weeks&rollingAverage=24hours&format=json&cors=true`
+      );
+      console.log('response', response);
+      setapiresponse(response.data);
+    }
+    getchartdatafn();
+  }, []);
 
- function Chartcontainer() {
+  useEffect(() => {
+    console.log('apiresponse', apiresponse);
+    let labels = [];
+    let datavalue = [];
+    if (apiresponse) {
+      apiresponse?.values?.map((each, index) => {
+        labels.push(each.x);
+        datavalue.push(each.y);
+      });
+    }
+    console.log('l', labels);
+    console.log('v', datavalue);
+    setchartvalue({ label: labels, value: datavalue });
+  }, [apiresponse]);
 
+  
+  const data = {
+    labels: chartvalue.label,
+    datasets: [
+      {
+      
+        label: 'Transaction Rate',
+        data: chartvalue.datavalue,
+        backgroundColor: 'rgba(255, 99, 132, 0.2)',
 
-useEffect(() => {
-  async function  getchartdatafn() {
-   let response=await axios.get(`https://api.blockchain.info/charts/transactions-per-second?timespan=5weeks&rollingAverage=8hours&format=json`)
-   console.log("response",response)
-  }
-  getchartdatafn()
+        borderColor: 'rgba(255, 99, 132, 1)',
 
-}, [])
+        borderWidth: 2,
+      },
+    ],
+  };
 
-
-
-
-  return <Pie data={data} />;
+  return (<div><Header/>
+  
+  
+  <div> <p className='font-32 font-bold center margin-40' >{apiresponse.description}</p> <Bar data={data} /></div>
+ <Footer/></div>);
 }
-export default Chartcontainer
+export default Chartcontainer;

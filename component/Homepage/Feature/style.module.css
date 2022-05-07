@@ -52,4 +52,35 @@
     height: auto;
     margin-top: 20px;
   }
-  
+  @media only screen and (max-width: 700px) {
+    .blockChild {
+      width: 450px;
+
+      padding:2px;
+      background-color: #FFFFFF;
+      height: 600px;
+    }
+    .rootContainer {
+      text-align: center;
+
+   
+      margin-top: 20px;
+      padding: 20px 20px ;
+      height: auto;
+      font-family: 'Proxima Nova Regular',sans-serif !important;
+      background-color: #FFFFFF;
+    }
+      
+   }
+   @media only screen and (max-width: 500px) {
+    .blockChild {
+      width: 300px;
+
+
+      background-color: #FFFFFF;
+      height: auto;
+    }
+   
+   
+      
+   }

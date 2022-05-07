@@ -3,7 +3,6 @@
 .coverContainer {
  
     object-fit:contain;
-   
     background-image: url("../../../public/homepage/advantage/AdobeStock_294465309.jpeg");
       height: 640px;
       width: 100%;
@@ -62,4 +61,27 @@
         border-radius: 6px 6px 6px 6px;
         padding: 0.6em 1.2em 0.8em 1.2em;
   }
+  @media only screen and (max-width: 900px) {
+    .header {
+      font-size: 35px;
+      padding-top: 30px;
+    }
+    .header:hover{
+      font-size: 40px;
+    }
+  
+    .Childheader{
+      font-size: 25px;
+       font-weight: bold;
+      
+       top: 10px;
+     
+       width: 80%;
+      
+   }
+
+   
+  }
+
+ 
   

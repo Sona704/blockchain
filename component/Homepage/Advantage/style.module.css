@@ -1,26 +1,30 @@
 /** @format */
 
 .rootcontainer {
-  
   background-color: #060a32;
   text-align: center;
   color: white !important;
   padding: 4%;
   height: 600px;
   margin-top: 60px;
-width: 100%;
-  
+  width: 100%;
 }
-.heading{
+.heading {
   font-size: 18px;
   font-weight: bold;
   color: #fff !important;
   margin-right: 15%;
   text-align: left;
   margin-left: 5%;
-  
 }
-.subheading{
+.container{
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.subheading {
   font-size: 20px;
   font-weight: 300;
   text-align: left;
@@ -29,11 +33,68 @@ width: 100%;
   color: #fff !important;
   margin-top: 20px;
 }
-.listitem{
+.listitem {
   font-size: 18px;
   font-weight: 200;
   text-align: left;
   margin-right: 15%;
   margin-left: 5%;
   margin-top: 10px;
+}
+.imgstyle{
+  width: 400px; height: 300px; margin: auto
+}
+@media only screen and (max-width: 800px) {
+  .rootcontainer {
+    padding: 2%;
+    height: 700px;
+    margin-top: 60px;
+    width: 100%;
+  }
+  .container{
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+  }
+  .heading {
+    font-size: 14px;
+
+    margin-right: 10%;
+
+    margin-left: 3%;
+  }
+  .imgstyle{
+    width: 205px; height: 200px; margin: auto
+  }
+  .subheading {
+    font-size: 18px;
+    font-weight: 300;
+
+    margin-right: 10%;
+    margin-left: 2%;
+
+    margin-top: 10px;
+  }
+  .listitem {
+    font-size: 16px;
+
+    text-align: left;
+    margin-right: 10%;
+    margin-left: 2%;
+    margin-top: 5px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+ 
+  .imgstyle{
+    width: 250px; height: 200px; margin: auto
+  }
+ 
+.rootcontainer {
+
+  padding: 2%;
+  height: 750px;
+ 
+}
 }
