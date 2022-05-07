@@ -1,0 +1,85 @@
+/** @format */
+
+.calbox {
+  border: 1px solid #d8d8d8;
+  box-shadow: 0 16px 24px rgb(51 51 51 / 8%);
+  padding: 40px 56px 32px;
+  width: 1136px;
+  margin: 0 auto;
+  min-height: 250px;
+  margin-top: 50px;
+  transition: transform .3s;
+}
+.calbox:hover {
+    transform: scale(1.2);
+    border: 1px solid #221a1a;
+  }
+
+.inputbox {
+  position: relative;
+  display: flex;
+
+  align-items: stretch;
+  width: 100%;
+  font-size: 25px;
+  line-height: 1.5;
+  border-radius: 4px;
+  height: 50px;
+}
+.submitbtn {
+  color: black;
+  background-color: #c51416bd;
+  border-color: transparent;
+  padding: 0.2em 0.5em;
+  font-size: 25px;
+  width: 300px;
+  font-weight: bolder;
+  border-width: 2px;
+  border-style: solid;
+  text-align: center;
+  border-radius: 5px;
+  min-height: 55px;
+}
+.submitbtn:hover{
+    color: black;
+    background-color: #eb8889bd;
+}
+.inputlabel {
+  font-weight: 600;
+  font-size: 20px;
+}
+.formcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  
+}
+.flexchild {
+  width: 50%;
+}
+.result{
+    border: 2px solid #d8d8d8;
+    box-shadow: 0 16px 24px rgba(12, 1, 1, 0.08);
+    width: 100%;
+    margin: 0 auto;
+    min-height: 50px;
+    margin-top: 50px;
+    border-radius: 5px;
+    align-items: center;
+    font-weight: 500;
+   
+}
+.center{
+   width: 100%; margin-top: 30px; text-align: center }
+.subheading{
+    font-size: 25px;
+    text-align: left;
+    margin-top: 50px;
+    font-weight: 600;
+}
+.heading{
+    font-size: 35px;
+    text-align: left;
+    font-weight: bolder;
+}

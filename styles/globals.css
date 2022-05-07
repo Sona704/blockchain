@@ -14,3 +14,51 @@ a {
 * {
   box-sizing: border-box;
 }
+.margin-auto{
+  margin:auto;
+  text-align: center;
+ 
+}
+.ant-list-split .ant-list-item {
+  border-bottom: none !important;
+}
+.ant-list-split .ant-list-header {
+  border-bottom: none !important;
+}
+.flexrow{
+  display: flex;
+  flex-direction: row;
+}
+.font-20{
+  font-size: 20px;
+}
+.font-18{
+  font-size: 18px;
+}
+.font-32{
+  font-size: 32px;
+}
+.font-bold{
+  font-weight: bold;
+}
+.margin-buttom-20{
+  margin-bottom: 20px;
+}
+.ant-carousel .homepage {
+  width: 80%;
+  margin: auto !important;
+  height: auto;
+  
+}
+.text-white{
+  color:#fff
+}
+.margin-40{
+  margin-top: 40px;
+}
+.margin-20{
+  margin-top: 20px;
+}
+.margin-10{
+  margin-top: 10px;
+}

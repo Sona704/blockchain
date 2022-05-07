@@ -1,0 +1,39 @@
+/** @format */
+
+.rootcontainer {
+  
+  background-color: #060a32;
+  text-align: center;
+  color: white !important;
+  padding: 4%;
+  height: 600px;
+  margin-top: 60px;
+width: 100%;
+  
+}
+.heading{
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff !important;
+  margin-right: 15%;
+  text-align: left;
+  margin-left: 5%;
+  
+}
+.subheading{
+  font-size: 20px;
+  font-weight: 300;
+  text-align: left;
+  margin-right: 15%;
+  margin-left: 5%;
+  color: #fff !important;
+  margin-top: 20px;
+}
+.listitem{
+  font-size: 18px;
+  font-weight: 200;
+  text-align: left;
+  margin-right: 15%;
+  margin-left: 5%;
+  margin-top: 10px;
+}

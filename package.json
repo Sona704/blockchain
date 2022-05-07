@@ -9,8 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "antd": "^4.20.2",
+    "axios": "^0.27.2",
+    "chart.js": "^3.7.1",
+    "clsx": "^1.1.1",
+    "faker": "^6.6.6",
     "next": "12.1.6",
     "react": "18.1.0",
+    "react-chartjs-2": "^4.1.0",
     "react-dom": "18.1.0"
   },
   "devDependencies": {

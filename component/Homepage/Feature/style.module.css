@@ -1,0 +1,55 @@
+/** @format */
+
+.rootContainer {
+    text-align: center;
+    padding-top: 90px;
+    margin: auto;
+    margin-top: 60px;
+    padding: 40px 40px 10px;
+    height: auto;
+    font-family: 'Proxima Nova Regular',sans-serif !important;
+    background-color: #FFFFFF;
+  }
+  .blockChild:hover{
+  
+    position: relative;
+      animation: push-up 1s forwards;
+    border-color: black;
+  } 
+  .iconstyle {
+    height: 100px;
+    width: 100;
+    margin: 20px 0px;
+  }
+  
+  .blockChild {
+   
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; 
+      transition: border 0.3s, border-radius 0.3s, box-shadow 3s;
+ width: 400px;
+    padding:5px;
+    background-color: #FFFFFF;
+    height: 600px;
+  
+  }
+  @keyframes push-up {
+      0% {
+      }
+      50% {
+          transform: translateY(-10px);
+      }
+      100% {
+          transform: translateY(-10px);
+      }
+  }
+  .explorebtn {
+    box-shadow: inset 0 0 0 3px;
+    font-weight: 700;
+    background-color: transparent;
+    font-size: 22px;
+    color: #192435;
+    padding: 10px 15px;
+    height: auto;
+    margin-top: 20px;
+  }
+  

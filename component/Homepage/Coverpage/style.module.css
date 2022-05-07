@@ -1,0 +1,65 @@
+/** @format */
+
+.coverContainer {
+ 
+    object-fit:contain;
+   
+    background-image: url("../../../public/homepage/advantage/AdobeStock_294465309.jpeg");
+      height: 640px;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-position-y: -5px;
+      background-size: cover;
+      padding-top: 20px;
+      transition: all linear 5s;
+  }
+  .header{
+      font-size: 44px;
+      font-weight: bolder;
+      font-family:Arial, Helvetica, sans-serif;
+      animation-name: fontcolor;
+      animation-duration: 20s;
+      color:red;
+      padding-top: 50px;
+      transition: font-size 2s;
+     
+  }
+  .header:hover{
+    font-size: 50px;
+  }
+  @keyframes fontcolor {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    100% {color: white;}
+  }
+  .headercontainer{
+    padding: 50px;
+   
+  }
+  .Childheader{
+     font-size: 30px;
+      font-weight: bold;
+      color:white;
+      top: 20px;
+    
+      width: 50%;
+     
+  }
+  .btnstyle{
+          margin: 30px 0px 0px 0px;
+         height: 80px;
+          width: 250px;
+        font-family: "Open Sans", -apple-system, Roboto, Oxygen-Sans, sans-serif;
+        background-color: #0f62fc;
+        font-size:30px;
+        font-weight: 600;
+     
+        color: #FFFFFF;
+        border-style: solid;
+        border-width: 0px 0px 0px 0px;
+      
+        border-radius: 6px 6px 6px 6px;
+        padding: 0.6em 1.2em 0.8em 1.2em;
+  }
+  
