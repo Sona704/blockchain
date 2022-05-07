@@ -49,8 +49,9 @@ function Index() {
             
             <h1 className={style.heading} >Bitcoin Price Calculator</h1>
             <p  className={style.subheading}>{`Use Paxful's Bitcoin calculator to find out exactly how much your Bitcoin is worth in any of the supported global currencies, using accurate, up-to-date exchange rates. Get real-time and historical trends in the BTC value for your selected currency.`}</p>
-          </div>
-          <img src='../../crypto_calc.svg'></img>
+          </div >
+          <div className={style.imgstyle}> <img  src='../../crypto_calc.svg'></img></div>
+         
         </div>
       </div>
       <div className={style.calbox}>

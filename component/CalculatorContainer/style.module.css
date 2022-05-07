@@ -107,3 +107,23 @@
   text-align: left;
   font-weight: bolder;
 }
+.imgstyle{
+  width: 100%;
+}
+@media only screen and (max-width: 500px) {
+  .imgstyle{
+    width: 300px;
+    object-fit: fill;
+    overflow: hidden;
+  }
+  .calbox {
+   
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 250px;
+    margin-top: 50px;
+    transition: transform 0.3s;
+  }
+
+}
